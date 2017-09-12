@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tabItem="http://schemas.android.com/apk/res/com.demo.cats"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal" 
+    android:background="@color/background_bg7"
+    android:paddingTop="@dimen/tab_padding"
+    android:paddingBottom="@dimen/tab_padding">
+
+    <com.cats.weights.TabItemView
+        android:id="@+id/movie"
+        style="@style/TabItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tabItem:contentLogoBack="@drawable/selector_tab_movie"
+        tabItem:contentTextString="@string/movie" />
+
+    <com.cats.weights.TabItemView
+        android:id="@+id/cinema"
+        style="@style/TabItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tabItem:contentLogoBack="@drawable/selector_tab_cinema"
+        tabItem:contentTextString="@string/cinema" />
+
+    <com.cats.weights.TabItemView
+        android:id="@+id/community"
+        style="@style/TabItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tabItem:contentLogoBack="@drawable/selector_tab_community"
+        tabItem:contentTextString="@string/community" />
+
+    <com.cats.weights.TabItemView
+        android:id="@+id/mine"
+        style="@style/TabItemStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        tabItem:contentLogoBack="@drawable/selector_tab_mine"
+        tabItem:contentTextString="@string/mine" />
+
+</LinearLayout>

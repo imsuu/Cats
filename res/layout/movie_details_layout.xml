@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/moviedetails_bg" >
+
+    <RelativeLayout 
+        android:layout_alignParentTop="true"  
+        android:id="@+id/iid"  
+        android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+         <ImageView
+            android:id="@+id/movieback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/movieback" 
+            android:clickable="true"
+/>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:orientation="horizontal" 
+         android:layout_below="@id/iid"
+         android:id="@+id/tid"
+        >
+       
+        <ImageView
+            android:id="@+id/movieimg"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/poster" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" 
+           
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                >
+
+            <TextView
+                android:id="@+id/itemmoviename"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:text="积分历史记录"
+                android:textColor="@color/lightwhite"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/itemmovieenglishname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:scaleType="fitXY"
+                android:text="sww"
+                android:textColor="@color/lightwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/itemmovietype"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:text="喜剧"
+                android:textColor="@color/lightwhite"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/itemmovieduration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:textColor="@color/lightwhite"
+                android:text="128分钟"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/itemmovietime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:textColor="@color/lightwhite"
+                android:text="2016-12-31"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+	
+    
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_below="@id/tid"
+        android:id="@+id/bid"
+        >
+                    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+                android:background="@color/background_bg3"
+                android:textColor="@color/lightwhite"
+                android:text="❤想看"/>
+        
+                    <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+                android:background="@color/background_bg3"
+                android:textColor="@color/lightwhite"
+                android:text="☆评分"/>
+        
+        
+    </LinearLayout>
+    
+    
+    
+    <TextView
+        android:layout_below="@id/bid"
+        android:background="@color/textcolor_white_a"
+        android:id="@+id/itemmoviexq"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitXY"
+        android:scrollbars="vertical"
+        android:text="积分历史记录大赛的无达瓦打完饭哇"
+         android:singleLine="false"
+        android:textSize="20sp" />
+    
+
+            <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" 
+        android:id="@+id/lid"
+        >
+        
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:id="@+id/btnbuy"
+                android:background="@color/background_bg1"
+                android:textColor="@color/lightwhite"
+                android:text="立即购票"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

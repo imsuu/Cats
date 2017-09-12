@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/textcolor_white_a"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_bg1"
+        android:orientation="horizontal" >
+
+        <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_weight="1">
+         <ImageView
+            android:id="@+id/movieback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/movieback" 
+            android:clickable="true"/>
+            </LinearLayout>
+        	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:id="@+id/cmoviename"
+		android:textColor="@color/lightwhite"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginBottom="10dp"
+		android:textSize="25sp"
+		android:text="asdadad"
+	    />
+        <LinearLayout 
+        android:orientation="vertical" 
+        android:layout_width="fill_parent" 
+        android:layout_height="fill_parent" 
+        android:layout_weight="1">
+                <ImageView
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/top_search_n"
+        android:focusable="false"
+        android:layout_gravity="right|center_vertical"
+        android:scaleType="centerInside" />
+            </LinearLayout>
+    </LinearLayout>
+
+ 	<TextView
+ 	    android:id="@+id/ctime"
+ 	    android:layout_width="match_parent"
+ 	    android:layout_height="30dp"
+ 	    android:layout_marginTop="10dp"
+ 	    android:layout_marginLeft="30dp"
+ 	    android:textSize="20sp"
+ 	    android:textColor="@color/lightgray"
+ 	    android:text="asdadad" />
+ 	
+		<ListView
+	    
+	    android:id="@+id/list_cinema2"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:layout_marginTop="10dp"
+		android:divider="#00000000"
+		android:dividerHeight="33dp">
+
+ 	</ListView>
+
+</LinearLayout>

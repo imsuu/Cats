@@ -1,0 +1,57 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowFullscreen">false</item>
+    </style>
+
+    
+    <!-- 使用自定义属性时，只需要把包名写上即可，如下方式: -->
+    <style name="TabItemStyle">
+        <item name="com.demo.cats:contentTextSize">@dimen/tab_text_size</item>
+        <item name="com.demo.cats:contentLogoSize">@dimen/tab_logo_size</item>
+        <item name="com.demo.cats:contentTextColor">@color/textcolor_black_b3</item>
+    </style>
+    
+    <style name="ImageDoubleTextViewStyle">
+        <item name="com.demo.cats:imageSize">@dimen/size_30</item>
+        <item name="com.demo.cats:bottom_default_text">@string/mine_default</item>
+        <item name="com.demo.cats:top_text_color">@color/textcolor_black_b3</item>
+        <item name="com.demo.cats:top_text_size">@dimen/title_text_size_02</item>
+        <item name="com.demo.cats:bottom_text_color">@color/textcolor_black_b1</item>
+        <item name="com.demo.cats:bottom_text_size">@dimen/title_text_size</item>
+        <item name="com.demo.cats:text_margin_left">@dimen/mine_margin2</item>
+        <item name="android:paddingRight">@dimen/size_40</item>
+    </style>
+    
+    <style name="MineMenuItemStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">@dimen/size_50</item>
+        <item name="com.demo.cats:leftPadding">@dimen/mine_margin2</item>
+        <item name="com.demo.cats:rightPadding">@dimen/mine_margin2</item>
+        <item name="com.demo.cats:textSize">@dimen/title_text_size</item>
+        <item name="com.demo.cats:textColor">@color/textcolor_black_b2</item>
+        <item name="com.demo.cats:rightFlagImg">@drawable/arrow_right_gray</item>
+        <item name="com.demo.cats:background">@color/textcolor_white_a</item>
+        <item name="com.demo.cats:leftImageSize">@dimen/size_20</item>
+        <item name="com.demo.cats:rightImageSize">@dimen/size_15</item>
+        <item name="com.demo.cats:bottomDevider">@color/background_bg2</item>
+        <item name="com.demo.cats:alphaFactor">0.7</item>
+        <item name="com.demo.cats:rippleColor">@color/rippleColor</item>
+        <item name="com.demo.cats:hover">true</item>
+    </style>
+    
+</resources>

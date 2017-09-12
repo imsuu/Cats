@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?><LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp" 
+    android:descendantFocusability="blocksDescendants">
+    
+
+   <ImageView
+        android:id="@+id/cinemaimg"
+        android:layout_width="80dp"
+        android:layout_height="110dp"
+        android:layout_weight="1"
+        android:src="@drawable/cinemaimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter" />
+   
+   <LinearLayout 
+    android:layout_weight="2"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+       <TextView
+           android:id="@+id/itemmoviename"
+           android:layout_width="160dp"
+           android:layout_height="wrap_content"
+           android:layout_marginBottom="10dp"
+           android:layout_marginLeft="10dp"
+           android:layout_marginRight="10dp"
+           android:layout_marginTop="10dp"
+           android:scaleType="fitXY"
+           android:text="积分历史记录"
+           android:textSize="20sp" />
+
+       <TextView
+            android:id="@+id/itemmoviejj"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginBottom="10dp"
+       android:layout_marginLeft="10dp"
+       android:layout_marginRight="10dp"
+       android:layout_marginTop="10dp"
+       android:text="积分历史记录"
+       android:textSize="14sp" />
+       
+   </LinearLayout>
+
+
+
+
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:gravity="center_horizontal"
+    android:layout_marginBottom="10dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:orientation="vertical" >
+
+       <Button
+           android:id="@+id/itembuy"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:background="@drawable/selector_shape_rect_01"
+           android:layout_gravity="center_vertical"
+           android:text="购票"
+
+           android:clickable="true"
+           android:textColor="@color/textcolor_red_text" />
+
+</LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity" 
+    android:background="@color/textcolor_white_a"
+    android:orientation="vertical">
+    
+        <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background_bg1"
+        android:orientation="horizontal" 
+        android:layout_alignParentTop="true"
+        android:id="@+id/itid">"
+         <ImageView
+            android:id="@+id/moveback"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:scaleType="fitCenter"
+            android:layout_gravity="left|center_vertical"
+            android:src="@drawable/movieback" 
+            android:clickable="true"/>
+        	<TextView 
+	    android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:id="@+id/mymoviename"
+		android:textColor="@color/lightwhite"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:layout_marginBottom="10dp"
+		android:textSize="25sp"
+		android:text="asdadad"
+	    />
+    </LinearLayout>
+    
+        <TextView 
+            android:layout_below="@id/itid"
+        android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:id="@+id/mycinemaname"
+		android:layout_marginTop="20dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="25sp"
+		android:text="asdadad"
+            />
+                <TextView 
+        android:layout_width="wrap_content"
+		android:layout_height="30dp"
+		android:id="@+id/mydatetime"
+		android:layout_marginTop="10dp"
+		android:layout_marginLeft="20dp"
+		android:textSize="15sp"
+		android:text="asdadad"
+		android:layout_below="@id/mycinemaname"
+            />
+        <ImageView 
+         	android:layout_width="match_parent"
+			android:layout_height="50dp"
+			android:scaleType="fitCenter"
+            android:src="@drawable/sange"
+            android:id="@+id/idimg"
+			android:layout_below="@id/mydatetime"
+            />
+        
+	<RelativeLayout 
+	    android:id="@+id/rl_thum"
+	    android:layout_width="match_parent"
+	    android:layout_height="100dp"
+	    android:background="@android:color/darker_gray"
+	    android:layout_below="@id/idimg"
+	    >
+	    <com.ldm.seatchoosetest.view.SSThumView
+                android:id="@+id/ss_ssthumview"
+                android:layout_width="@dimen/ss_seat_thum_size_w"
+                android:layout_height="@dimen/ss_seat_thum_size_h"
+                android:layout_centerVertical="true"
+                android:layout_marginBottom="5.0dip"
+                android:layout_marginLeft="5.0dip"
+                android:layout_marginTop="5.0dip" />
+	</RelativeLayout>
+		
+    
+    	<com.ldm.seatchoosetest.view.SSView 
+    	
+	    android:id="@+id/mSSView"
+	    android:layout_below="@id/rl_thum"
+	    android:layout_marginTop="20dp"
+	    android:layout_width="match_parent"
+	    android:layout_height="250dp"
+	    />
+    	
+
+
+<LinearLayout
+android:id="@+id/bottom_panel" 
+android:layout_width="fill_parent" 
+android:layout_height="wrap_content"
+android:orientation="horizontal" 
+android:layout_alignParentBottom="true"
+> 
+<Button
+android:id="@+id/doseat" 
+android:layout_width="0dp" 
+android:layout_height="wrap_content" 
+android:layout_weight="1" 
+android:background="#FFA500"
+android:layout_gravity="center_vertical" 
+android:text="@string/querenzuowei" 
+/> 
+</LinearLayout> 
+
+</RelativeLayout>

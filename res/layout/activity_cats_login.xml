@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:orientation="vertical" >
+
+        <LinearLayout  
+        android:layout_width="fill_parent"  
+        android:layout_height="45dp"  
+        android:orientation="horizontal"  
+   
+        android:weightSum="2" >  
+  
+        <Button  
+            android:layout_width="wrap_content"  
+            android:layout_height="fill_parent"  
+            android:layout_weight="1"  
+            android:text="   账号登陆" 
+            android:id="@+id/goLogin"
+       		android:textColor="@color/lightwhite"
+            android:textSize="@dimen/title_text_size_02" 
+            android:gravity="left|center"
+            android:background="@color/background_bg1"/>  
+        <Button  
+            android:layout_width="wrap_content"  
+            android:layout_height="fill_parent"  
+            android:layout_weight="1"   
+            android:text="注册   "
+            android:id="@+id/goRegister"
+            android:textColor="@color/lightwhite"
+            android:gravity="right|center"
+            android:background="#888"/>  
+    </LinearLayout>
+
+        
+        <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30.0dip"
+        android:drawablePadding="10.0dip"
+        android:id="@+id/phoneNum"
+        android:hint="请输入手机号码" 
+        android:inputType="phone"
+        android:textColor="#1E90FF"
+        />  
+
+   
+    <EditText android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:drawablePadding="10.0dip"
+        android:id="@+id/password"
+        android:hint="请输入密码" 
+        android:inputType="textPassword"
+        android:textColor="#1E90FF"/>
+    
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20.0dip"
+        android:background="@color/background_bg1"
+        android:textColor="#ffffff"
+        android:id="@+id/btnDo"
+        android:text="登陆"/>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <include layout="@layout/fragment_cinema_top_layout"/>
+
+    <ImageView
+        android:id="@+id/cinemaimg"
+        android:layout_width="fill_parent"
+        android:layout_height="100dp"
+        android:gravity="top"
+        android:scaleType="fitXY"
+        android:src="@drawable/cinemaimg" />
+
+	<include layout="@layout/fragment_cinema_btn_layout"/>
+
+	<RelativeLayout  
+	    android:id="@+id/Content_Layout"   
+        android:orientation="horizontal"  
+        android:layout_width="fill_parent"   
+        android:layout_height="fill_parent"  
+	    android:layout_below="@id/cinemaimg" >
+		<ListView
+	    
+	    android:id="@+id/list_cinema"
+	    android:layout_width="match_parent"
+		android:layout_height="match_parent" 
+		android:divider="#00000000"
+		android:dividerHeight="33dp">
+		
+	</ListView>
+	</RelativeLayout>
+</LinearLayout>
